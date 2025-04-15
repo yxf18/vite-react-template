@@ -1,8 +1,11 @@
-@tailwind base;
+@import './normalize.css';
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-@import "./normalize.css";
+@tailwind utilities; */
 
+#root {
+  height: 100vh;
+}
 :where(.ant-tabs) .ant-tabs-nav .ant-tabs-extra-content {
   flex: auto;
   text-align: right;
@@ -17,7 +20,10 @@
   margin: unset;
 }
 
-:where(.ant-form-vertical) .ant-form-horizontal .ant-form-item-label > label::after {
+:where(.ant-form-vertical)
+  .ant-form-horizontal
+  .ant-form-item-label
+  > label::after {
   visibility: unset;
 }
 
@@ -26,4 +32,13 @@
 :is(.ant-menu-light) .ant-menu-submenu-title,
 :is(.ant-menu-light) > .ant-menu .ant-menu-submenu-title {
   color: #ffffe5;
+}
+
+.border-radius {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.p-3 {
+  padding: 12px;
 }
