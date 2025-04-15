@@ -5,8 +5,8 @@
 
 
 ## 技术栈
-React、Route Router19、Ant Design、Vite、TypeScript、
-Mobx、@emotion/react、Axios
+React、[Route Router19](https://reactrouter.com/home)、Ant Design、Vite、TypeScript、
+(Mobx](https://github.com/mobxjs/mobx)、[@emotion/react](https://emotion.sh/docs/introduction)、Axios、[tailwindcss](https://www.tailwindcss.cn/docs/installation)
 
 ## 规范化
 eslint、prettier、commintlint
