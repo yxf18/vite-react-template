@@ -1,21 +1,17 @@
-import { Link, Outlet } from 'react-router'
-import { Button } from 'antd'
-import { css } from '@emotion/react'
+import { Outlet } from 'react-router'
+import { AppHeader, AppMain } from '@/Layout'
+import { StoreProvider, RootStore } from './store'
+
+const rootStore = new RootStore()
 
 function App() {
   return (
-    <div>
-      App
-      <Link to="/tasks">task</Link>
-      <Outlet />
-      <Button type="primary" css={css`
-        margin-top: 100px;
-        color: red;
-        >span{
-            padding: 30px;
-        }
-      `}>tailwindcss</Button>
-    </div>
+    <StoreProvider value={rootStore}>
+      <AppHeader />
+      <AppMain>
+        <Outlet />
+      </AppMain>
+    </StoreProvider>
   )
 }
 
