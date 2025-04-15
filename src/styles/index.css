@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./normalize.css";
+
+:where(.ant-tabs) .ant-tabs-nav .ant-tabs-extra-content {
+  flex: auto;
+  text-align: right;
+}
+
+:where(.ant-form-vertical) .ant-form-horizontal .ant-form-item-row {
+  flex-direction: unset;
+}
+
+:where(.ant-form-vertical) .ant-form-horizontal .ant-form-item-label > label {
+  height: 32px;
+  margin: unset;
+}
+
+:where(.ant-form-vertical) .ant-form-horizontal .ant-form-item-label > label::after {
+  visibility: unset;
+}
+
+:is(.ant-menu-light) .ant-menu-item,
+:is(.ant-menu-light) > .ant-menu .ant-menu-item,
+:is(.ant-menu-light) .ant-menu-submenu-title,
+:is(.ant-menu-light) > .ant-menu .ant-menu-submenu-title {
+  color: #ffffe5;
+}

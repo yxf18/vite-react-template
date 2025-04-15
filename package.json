@@ -1,0 +1,53 @@
+{
+  "name": "cyber-crawler",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "prepare": "husky install",
+    "lint": "eslint --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "antd": "5.15.1",
+    "axios": "^1.2.6",
+    "commitlint": "^19.8.0",
+    "mobx": "^6.7.0",
+    "mobx-react-lite": "^3.4.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}
