@@ -24,5 +24,10 @@ npm run build // 打包项目
 npm run lint // 代码检查
 ```
 
+## 分支说明
+- main 主分支 (发布)
+- dev 开发分支 (开发)
+- dev-xxx 个人分支
 
+## 其他说明
 > <font color="red">node版本：20.x</font>
